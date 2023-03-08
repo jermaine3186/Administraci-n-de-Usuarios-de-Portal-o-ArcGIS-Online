@@ -22,7 +22,7 @@ with open(csv_file_path) as csv_file_input:
 
         # Try to find the User with the specified Name. If found, delete the User
         user_by_name = gis.users.get(str(row[0]))
-
+        arcpy.AddMessage(user_by_name)
         if user_by_name:
             num_items = 0
             num_folders = 0
