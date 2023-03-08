@@ -26,7 +26,7 @@ with open(csv_file_path) as csv_file_input:
         if user_by_name:
             num_items = 0
             num_folders = 0
-            arcpy.AddMessage("Contando los item ids para {}".format(user_by_name.username), end="\t\t")
+            arcpy.AddMessage("Contando los item ids para {}".format(user_by_name.username))
             user_content = user_by_name.items()
             # Get item ids from root folder first
             for item in user_content:
